@@ -4,11 +4,11 @@ import StudentManagement from './pages/StudentManagement';
 import FeeStructure from './pages/FeeStructure';
 import Notifications from './pages/Notifications';
 import Reports from './pages/Reports';
-import Master from './pages/Master'
+import Class from './pages/Class'
 // import PaymentPortal from './pages/PaymentPortal';
 import Layout from './components/Layout';
 import ExaminationSystem from './pages/ExaminationSystem'
-// import StudentRegistrationForm from './pages/StudentForm';
+import StudentRegistrationForm from './pages/StudentForm';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           {/* Master component */}
-          <Route path="/master" element={<Master/>}/>
+          <Route path="/class" element={<Class/>}/>
           {/* Master component end */}
           <Route path="/students" element={<StudentManagement />} />
           <Route path="/fee-structure" element={<FeeStructure />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path='/examination-system' element={<ExaminationSystem />}/>
           {/* Examination system start */}
 
-          {/* <Route path="/StudentRegistrationForm" element={<StudentRegistrationForm />} /> */}
+          <Route path="/StudentRegistrationForm" element={<StudentRegistrationForm />} />
 
           {/* <Route path="/payment-portal" element={<PaymentPortal />} /> */}
         </Routes>
